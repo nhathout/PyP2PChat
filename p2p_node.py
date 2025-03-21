@@ -112,10 +112,10 @@ def main():
 
     Example:
         # Terminal 1
-        python p2p_node.py 5000 127.0.0.1 5001
+        python p2p_node.py 5001 127.0.0.1 5002
 
         # Terminal 2
-        python p2p_node.py 5001 127.0.0.1 5000
+        python p2p_node.py 5002 127.0.0.1 5001
     """
     if len(sys.argv) != 4:
         print("Usage: python p2p_node.py <my_port> <peer_ip> <peer_port>")
