@@ -24,7 +24,7 @@ Open **two separate terminals** (or two machines on the same network) and choose
 - **Terminal A**:
   ```python p2p_node.py 5001 127.0.0.1 5002```
 
-  - **Terminal B**:
+- **Terminal B**:
   ```python p2p_node.py 5002 127.0.0.1 5001```
 
   ## Local Database
