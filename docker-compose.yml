@@ -1,0 +1,28 @@
+services:
+  peer1:
+    build:
+      context: .
+    container_name: p2p_peer1
+    command: ["python", "p2p_node.py", "5001"]
+    networks:
+      p2pnet:
+        aliases:
+          - peer1
+    volumes:
+      - ./peers.txt:/app/peers.txt
+
+  peer2:
+    build:
+      context: .
+    container_name: p2p_peer2
+    command: ["python", "p2p_node.py", "5002"]
+    networks:
+      p2pnet:
+        aliases:
+          - peer2
+    volumes:
+      - ./peers.txt:/app/peers.txt
+
+networks:
+  p2pnet:
+    driver: bridge
