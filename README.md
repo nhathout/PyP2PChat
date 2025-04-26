@@ -1,4 +1,4 @@
-# PyP2PChat – Phase 1
+# PyP2PChat
 
 A simple **peer-to-peer** chat system that uses Python’s `socket` and `threading` to enable two nodes to send and receive text messages without a central server. Each node also stores a local SQLite database of messages.
 
